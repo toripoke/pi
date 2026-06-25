@@ -21,5 +21,6 @@ defineProps<{
 .buttontext{
     width: 100%;
     text-align: center;
+    font-size: 30px;
 }
 </style>
