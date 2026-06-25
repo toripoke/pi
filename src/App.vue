@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import SideBar from './components/SideBar.vue'
 import SampleComponent from './components/SampleComponent.vue'
+import SideBar from './components/SideBar.vue'
 import WelcomeMessage from './components/WelcomeMessage.vue'
-
 </script>
 
 <template>
@@ -16,12 +15,11 @@ import WelcomeMessage from './components/WelcomeMessage.vue'
 </template>
 
 <style scoped>
-main {
-  padding: 2rem;
-}
 
 .horizontal{
   display : flex;
   flex-direction : row;
+  border :1px solid red;
+  
 }
 </style>
