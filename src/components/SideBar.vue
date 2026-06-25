@@ -1,6 +1,10 @@
+<script setup lang="ts">
+import SideBarButton from './SideBarButton.vue'
+</script>
+
 <template>
     <div class="sidebar">
-        SideBar
+       <SideBarButton />
     </div>
 </template>
 
@@ -9,4 +13,7 @@
     width: 300px;
     background-color: #eeeeee;
 }
+
+
+
 </style>
