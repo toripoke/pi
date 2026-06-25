@@ -2,14 +2,16 @@
 import SampleComponent from './components/SampleComponent.vue'
 import SideBar from './components/SideBar.vue'
 import WelcomeMessage from './components/WelcomeMessage.vue'
+import MainContent from './components/MainContent.vue'
 </script>
 
 <template>
   <main>
     <div class="horizontal">
       <SideBar />
-      <WelcomeMessage msg="Webエンジニアになろう講習会へようこそ" />
-      <SampleComponent msg="Webエンジニアになろう講習会へようこそ" />
+      <MainContent/> 
+      <!-- <WelcomeMessage msg="Webエンジニアになろう講習会へようこそ" /> -->
+      <!-- <SampleComponent msg="Webエンジニアになろう講習会へようこそ" /> -->
     </div>
   </main>
 </template>
