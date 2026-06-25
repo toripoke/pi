@@ -1,11 +1,17 @@
+<script setup lang="ts">
+defineProps<{
+    fruit: string
+}>()
+</script>
+
 <template>
   <div class="syoumozi">
-  appleapple
+    {{ `${fruit} `.repeat(20) }}
   </div>
 </template>
 
 <style scoped>
 .syoumozi {
-    font-size:10px;
+    font-size:15px;
 }
 </style>

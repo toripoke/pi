@@ -1,13 +1,16 @@
 <script setup lang="ts">
 import DanraKu from './DanraKu.vue'
 import GaZou from './GaZou.vue'
+defineProps<{
+  fruit: string
+}>()
 </script>
 
 <template>
   <div class="maincontent">
     <div class="subcontent">
         Title
-        <DanraKu/>
+        <DanraKu :fruit="fruit"/>
         <div class="subsubcontent">
             <GaZou color="red"/>
             <GaZou color="lime"/>
@@ -24,7 +27,7 @@ import GaZou from './GaZou.vue'
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border :1px solid blue;
+    /* border :1px solid blue; */
     width: 100%;
 }
 .subcontent{
@@ -34,7 +37,7 @@ import GaZou from './GaZou.vue'
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    border :1px solid red;
+    /* border :1px solid red; */
     font-size: 40px;
 }
 

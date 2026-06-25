@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import {ref} from 'vue'
-import SideBarButton from './SideBarButton.vue'
-const fruit=ref('Apple')
 
+import SideBarButton from './SideBarButton.vue'
+
+const fruit=defineModel<string>('fruit')
 const handleClick=(label: string)=>{
     fruit.value=label
     console.log(label)
