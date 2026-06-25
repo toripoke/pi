@@ -1,16 +1,14 @@
 <script setup lang="ts">
+const emit= defineEmits<{
+    (e: 'click',label:string):void
+}>()
 const props= defineProps<{
     label: string
 }>()
-
-const loglabel = () =>{
-    console.log(props.label)
-}
-
 </script>
 
 <template>
-    <div class="button" @click="loglabel">
+    <div class="button" @click="emit('click',props.label)">
         <div class="buttontext">{{label}}</div>
     </div>
 </template>
