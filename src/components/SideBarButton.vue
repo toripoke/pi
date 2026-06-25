@@ -1,11 +1,16 @@
 <script setup lang="ts">
-defineProps<{
+const props= defineProps<{
     label: string
 }>()
+
+const loglabel = () =>{
+    console.log(props.label)
+}
+
 </script>
 
 <template>
-    <div class="button">
+    <div class="button" @click="loglabel">
         <div class="buttontext">{{label}}</div>
     </div>
 </template>
