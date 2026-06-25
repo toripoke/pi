@@ -4,6 +4,8 @@ import SideBarButton from './SideBarButton.vue'
 
 <template>
     <div class="sidebar">
+       <SideBarButton label="Apple"/>
+       <SideBarButton label="Banana"/>
        <SideBarButton />
     </div>
 </template>

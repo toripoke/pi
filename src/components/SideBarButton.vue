@@ -1,6 +1,12 @@
+<script setup lang="ts">
+defineProps<{
+    label: string
+}>()
+</script>
+
 <template>
     <div class="button">
-        <div class="buttontext">Apple</div>
+        <div class="buttontext">{{label}}</div>
     </div>
 </template>
 
