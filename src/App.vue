@@ -19,7 +19,8 @@ import WelcomeMessage from './components/WelcomeMessage.vue'
 .horizontal{
   display : flex;
   flex-direction : row;
-  border :1px solid red;
+  /* border :1px solid red; */
+  height: 100vh;
   
 }
 </style>
